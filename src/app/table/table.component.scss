@@ -1,0 +1,40 @@
+thead th{
+    border: 1px solid grey;
+    padding:4px 8px;
+}
+
+.inner-td{
+  //  width: 100%;
+    border-bottom: 1px solid grey;
+    height: 21px;
+}
+
+th:first{
+    width: 100px;
+}
+
+.first-column{
+    display: flex;
+    flex-direction: row;
+}
+
+.first-inner-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-inner-column td{
+    border: 1px solid grey;
+}
+
+.ou{
+    width: 100px;
+    padding: 8px;
+    align-items: center;
+}
+
+table {
+    border-collapse: separate;
+    text-indent: initial;
+    border-spacing: 0px !important;
+}

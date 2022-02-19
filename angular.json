@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "hisp"
+  "defaultProject": "hisp",
+  "cli": {
+    "analytics": false
+  }
 }

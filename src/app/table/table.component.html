@@ -1,0 +1,30 @@
+<table>
+    <thead>
+        <th *ngFor="let head of headers ">
+            {{head}}
+        </th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let o of ou">
+            <td>
+                <div class="first-column" style="border: 1px solid grey;">
+                    <div class="ou">
+            <td>{{o}}</td>
+            </div>
+            <div class="first-inner-column">
+                <div *ngFor="let d of dx">
+                    <td>{{d}}</td>
+                </div>
+            </div>
+
+            </div>
+            </td>
+            <td *ngFor="let innerRow of getRowHeaders()" style="border: 1px solid grey;text-align: center;">
+                <div *ngFor="let innerDx of dx">
+                    <div class="inner-td">{{getRowValue(innerDx,innerRow,o)}}</div>
+                </div>
+            </td>
+
+        </tr>
+    </tbody>
+</table>
